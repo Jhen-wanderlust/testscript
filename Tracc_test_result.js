@@ -14,7 +14,7 @@ var mt= dt.getMinutes();
 mt = mt;
 localStorage.setItem("mt", mt.toString());
 
-console.log('Minutes :' +mt);
+console.log('Minutes :' + mt);
 
 
 var dt = new Date();
@@ -22,7 +22,7 @@ var st= dt.getSeconds();
 st = st;
 localStorage.setItem("st", st.toString());
 
-console.log('Seconds :' +st);
+console.log('Seconds :' + st);
 
 
 // for date and time
