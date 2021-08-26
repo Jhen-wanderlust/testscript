@@ -94,13 +94,13 @@ console.log(time_result);
                     // time computation 
 
                     // for console 
-                    var thours = ht - eht;
+                    var thours = eht - ht;
                     console.log(thours);
                     
-                    var tmins = mt - emt;
+                    var tmins = emt - mt;
                     console.log(tmins);
 
-                    var tsec = st - est;
+                    var tsec = est - st;
                     console.log(tsec);
 
                     //returns the absolute value of a number.
