@@ -30,7 +30,7 @@
                                 //Percentage formula = (Value/Total value)×100.
 
 
-                              window.alert("Total Executed Steps: "+ intTotal + "   Passed :  "+ Intperpassed+" % " + "  Failed : "+ Intperfailed+" % " + " Healed By TP : "+ Intperhealed+" % ");
+                                window.alert("Total Executed Steps: "+ intTotal + "   Passed :  "+ Intperpassed+" % " + "  Failed : "+ Intperfailed+" % " + "                             Healed By TP : "+ Intperhealed+" % ");
 
 
                                 

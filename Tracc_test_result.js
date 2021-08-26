@@ -14,7 +14,7 @@ var mt= dt.getMinutes();
 mt = mt;
 localStorage.setItem("mt", mt.toString());
 
-console.log('Minutes :' + mt);
+console.log('Minutes :' +mt);
 
 
 var dt = new Date();
@@ -22,7 +22,7 @@ var st= dt.getSeconds();
 st = st;
 localStorage.setItem("st", st.toString());
 
-console.log('Seconds :' + st);
+console.log('Seconds :' +st);
 
 
 // for date and time
@@ -94,13 +94,13 @@ console.log(time_result);
                     // time computation 
 
                     // for console 
-                    var thours = eht - ht;
+                    var thours = ht - eht;
                     console.log(thours);
                     
-                    var tmins = emt - mt;
+                    var tmins = mt - emt;
                     console.log(tmins);
 
-                    var tsec = est - st;
+                    var tsec = st - est;
                     console.log(tsec);
 
                     //returns the absolute value of a number.

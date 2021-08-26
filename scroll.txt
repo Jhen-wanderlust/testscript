@@ -1,0 +1,19 @@
+const button = document.getElementById('slide');
+
+button.onclick = function () {
+  document.getElementById('item_detail').scrollLeft += 300;
+};
+
+
+var sLeft = element.scrollLeft;
+element.scrollLeft = 10;
+
+
+
+document.getElementById('item_detail').scrollLeft += 300;
+ - testproject execute js , to scroll about 300 pixels to the swipe rigth
+
+document.getElementByClassName('vScrollTablel').scrollLeft += 300;
+
+document.getElementById('item_detail').scrollLeft -= 300;
+ - testproject execute js , to scroll about 300 pixels to the swipe left

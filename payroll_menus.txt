@@ -1,0 +1,169 @@
+PAYROLL MENUS
+Setup
+	Setup
+		Company Information
+		Conversion Rate
+		Payroll Parameters
+Master File
+	PRIMARY MF
+		PRIMARY MF: Account Type
+		PRIMARY MF: Allowance
+		PRIMARY MF: Bank Account
+		PRIMARY MF: Department
+		PRIMARY MF: Employee Status
+		PRIMARY MF: Employment Type
+		PRIMARY MF: Leaves
+		PRIMARY MF: Loans
+		PRIMARY MF: Other Deductions
+		PRIMARY MF: Other Earnings
+		PRIMARY MF: Payroll Group
+		PRIMARY MF: Piece Rate
+		PRIMARY MF: Position
+	SECONDARY MF
+		SECONDARY MF: Branch
+		SECONDARY MF: Division
+		SECONDARY MF: I.D. Type
+		SECONDARY MF: Industry
+		SECONDARY MF: Job / Rank Level
+		SECONDARY MF: Nationality
+		SECONDARY MF: Religion
+		SECONDARY MF: Suffix
+	Employee
+		Employee Certification
+		Employee Default Allowance
+		Employee Default Deductions
+		Employee Default Earnings
+		Employee Entry
+		Employment History List 
+		Leaves Monitoring
+		Loans Monitoring
+		Transaction History and Adjustment
+		Upload Beginning Balance
+		Upload Employee Rate and Default
+		View Government Contribution
+Tables
+	Overtime Rates
+		Overtime and Nights Diff. Rates
+	Tax
+		Tax Code
+		Tax Computation Setup
+		Tax Table
+	ECOLA
+		ECOLA Setup
+	Allowance
+		Additional Allowance Setup
+		Allowance Setup 1
+		Allowance Setup 2
+		Allowance Setup 3
+		Allowance Setup 4
+		Allowance Setup 5
+	Deduction
+		Deduction Setup 1
+		Deduction Setup 2
+		Deduction Setup 3
+		Deduction Setup 4
+		Deduction Setup 5
+	SSS
+		SSS Computation Setup
+		SSS Table
+	Mass Update
+		Allowance
+		Daily Rate
+		Leave
+		Monthly Rate
+		Other Deductions
+		Other Earnings
+	Pag-Ibig
+		Pag-ibig Setup
+	PhilHealth
+		Phil Health Computation Setup
+Transactions
+	Transaction
+		Payroll Entry
+	13th Month
+		13th Month Pay Computation
+		Generate 13th Month Pay
+Reports
+	Reports
+		Allotee Information
+		Contract Expiry List
+		Cost Center Summary By Department
+		Employee Anniversary List
+		Employee Leaves
+		Employee List
+		Employee Loans and Payment
+		Expanded Withholding Tax Report
+		Export Payroll Transaction
+		Export Tax Status
+		Gross Compensation Income
+		Monthly
+		Payroll Codes
+		Payroll Transaction per Employee
+		Tax Computation Per Year
+		Year to Date
+	Employee Personal Information
+		Employee Personal Information
+	Payroll Summary
+		Contribution With Tax Register
+		Summary of Earnings and Deductions
+		Summary of Income For Payroll Group
+		Summary of Payroll Group
+Utilities
+	Utilities
+		Alert
+		Create Excel Template for Import Data
+		Export Data
+		Import Data
+		Set Password
+		Setup GL Transaction to Accounting System
+		Estimate Yearly Tax
+		Export Employee Attendance
+		Export Employee Listing
+		Export Menus
+		Fixes
+		User Login
+		User's Activity Log
+SSS
+	Report
+		AMS - Contribution Collection List
+		Employee Pre-Validation File
+		Maternity Notifications and Benefits
+		Monthly Contribution List
+		Quarterly Contribution List
+		R-1A Employment Report
+		R-3 Collection List ( Quarterly )
+		R-3 Contribution Diskette (Monthly)
+		R-5 (Contribution Payment Return)
+		Sickness Notifications and Benefits
+		SSS Certification
+		SSS Loans Diskette
+		SSS ML-1
+		SSS Payment Details
+Phil Health
+	Report
+		Membership Listing
+		Phil Health Certification
+		Phil Health Disk (M5-Summary - Monthly)
+		Phil Health EPRS
+		Phil Health Payment Details
+		Phil Health Report of Employee - Members (Er2)
+		RF-1 (Employer's Monthly Remittance Report)
+Pag-Ibig
+	Report
+		Contribution and Loan Amortization
+		List of Pag-Ibig Member Diskette
+		M1-1 (Membership Registration/Remittance Form)
+		MC and Loan Amortization
+		MCRF
+		Monthly Remittance Schedule for Multi-Purpose Loan
+		Pag-Ibig Certification
+		Pag-Ibig Payment Details
+		Short Term Loan
+B.I.R.
+	Transaction
+		Alpha Listing
+	Report
+		0619-E (Monthly)
+		1601-C
+		2307 Certificate for Consultants
+		2316

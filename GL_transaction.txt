@@ -1,0 +1,148 @@
+
+Transaction	GL Entries Generated
+Sales	  
+
+ Debit : AR (as defined in Customer Master File)
+Cash Account (Sales) (as defined in Set-Up)
+Credit : Sales Account (as defined in Item Master File)
+For Inventory Items (When Perpetual Costing Method is used)
+Debit : CGS (as defined in Item Master File)
+Credit : Inventory (as defined in Item Master File)
+
+Sales Return	
+
+Debit : Sales Return (as defined in Item Master File)
+Credit : Cash Account (as defined in Sales Transaction)
+AR (as defined in Customer Master File)
+For Inventory Items (When Perpetual Costing Method is used)
+Debit : Inventory (as defined in Item Master File)
+Credit : CGS (as defined in Item Master File)
+
+
+Transaction	GL Entries Generated
+Accounts Receivable	
+Other Receivables (AR DEBIT MEMO)	
+Debit : AR (as defined in Customer Master File)
+Credit : GL Entry depends on Memo Type used
+
+AR Payments CASH	
+
+Debit : As defined above in Sales Transaction - Cash
+Credit : AR (As defined in Customer Master File)
+
+AR Payments CHECK
+Debit : Check On Hand (As defined in Set Up)
+Credit : AR (As defined in Customer Master File)
+
+AR Payments: CREDIT MEMO	
+
+Debit : GL Entry depends on Memo Type Used
+Credit : AR (as defined in Customer Master File)
+
+
+
+Transaction                     GL Entries Generated
+Receiving / Purchases	
+
+Debit : Inventory (as defined in Item Master File) - for Perpetual Inventory Method
+Purchases (CGS Account) - for Periodic Inventory Method
+Credit : AP (as defined in Supplier Master File)
+Cash (as defined in Set Up)
+
+Purchase Return	
+
+Debit : Cash Account (as defined in Receiving Transaction)
+or AP (as defined in Supplier Master File)
+Credit : Inventory (as defined in Item Master File) - for Perpetual Inventory Method
+Purchases (CGS Account) - for Periodic Inventory Method
+Non-Inventory (Expense Account)
+
+
+Transaction	GL Entries Generated
+Accounts Payables	
+Other Payables (AP DEBIT MEMO)	
+Debit : GL Entry depends on Memo Type used
+Credit : AP (as defined in Supplier Master File)
+AP Payments CASH	
+Debit : AP (As defined in Supplier Master File)
+Credit : As defined in Receiving/Purchases Transaction - Cash
+AP Payments CHECK
+Debit : AP (As defined in Supplier Master File)
+Credit : As defined in Bank Account File
+AP Payments: CREDIT MEMO	
+Debit : AP (as defined in Supplier Master File)
+Credit : GL Entry depends on Memo Type Used
+
+Transaction	GL Entries Generated
+Inventory Transactions	
+Adjustments and	Debit : Inventory Account (as defined in Item Master File)
+Physical Count	Credit : Inventory Gain / Loss
+
+PERPETUAL INVENTORY METHOD
+
+                    Purchases and Sales of Merchandise Inventory are directly Debited and Credited to the Inventory Account.
+
+                    Running/Weighted Average Cost is used in determining the Cost of Inventory during Sales.
+
+                    This method is recommended as pilferage, damages and losses are properly accounted.
+
+
+
+                    How to use the Perpetual Inventory Method in the System
+
+                    In the Chart of Accounts Create an "Inventory Account" (Type: Current Assets) and 
+                    a "Cost Of Goods Sold" (Type:CGS) Account
+
+                    In the GL Set Up Option, Item Tab, Inventory Column, Enter the GL Account for Inventory, 
+                    In the CGS column Enter the Cost of Goods Sold Account.
+
+                    Every time a Sale is entered, using Running/Weighted Average Cost, the Cost of Inventory is credited from 
+                    Inventory and debited to the CGS Account. 
+
+                    When Merchandise Inventory are received, The cost of purchase is debited into the Inventory Account.
+
+
+
+                    PERIODIC INVENTORY METHOD
+
+                    The CGS is computed/determined only at the end of every accounting period.
+
+                    A physical count of the Ending Inventory has to be conducted and entered at the end of every accounting period.
+
+                    The Cost of Goods sold is generally determined by the following:
+                    Beginning Inventory + Purchases - Ending Inventory = Cost of Goods Sold.
+
+                    Purchases of Merchandise Inventory are debited to a Purchases Account.
+                    No entries are made to CGS or Inventory during Sales Transactions.
+
+                    How to use the Periodic Inventory Method in the System
+                    Create an Inventory Account with Type “Current Assets”
+                    Create the following Accounts with the type “CGS”:
+                    - Beginning Inventory
+                    - Purchases
+                    - Ending Inventory
+
+                    On entry of the Initial Physical Count (with Cost) check the "Disable Inventory Gain/Loss".  
+                    This will cause the system not to generate GL Entries, so you have to enter the Initial Beginning Balance for 
+                    Inventory manually in Journal Entry. You may view the Total Value of the inventory in the Stock Valuation Report.
+
+                    In the GL SetUp, Item Tab, Inventory Column, Enter the Purchases Account, leave the CGS column Empty.
+                    Which means the system will Debit into the Purchases Account (CGS) during Receiving of Stocks and will not credit
+                    Inventory during Sales of Stock.
+
+                    The Inventory Account(Asset) will not move since no entries are generated to its account during Sales and Purchases.
+
+                    At the end of every accounting period, you need to do the following:
+                    - Conduct a Physical Count and enter the data in the Physical Count Entry, check the "Disable Inventory Gain/Loss".
+                    - Get the Total Value of the Ending Inventory in the Stock Valuation Report.
+                    - Enter the following Journal Entries:
+
+                      GL Account                                   Debit                                                 Credit
+                      Beginning Inventory (CGS)     Value of Beginning Inventory
+
+                      Inventory (Asset Account)                                                                    Value of Beginning Inventory
+
+                      Inventory (Asset Account)        Value of Ending Inventory
+                                    
+                      Ending Inventory (CGS)                                                                        Value of Ending Inventory
+
