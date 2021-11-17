@@ -1,0 +1,79 @@
+
+// validate Accounting Vat Inclusive computation 
+let grandtot = document.querySelector('#txtgrandtot').value
+
+var cleantext = grandtot.replace(',','' ).trim(); 
+var notext = cleantext.replace('P', '').trim(); 
+
+console.log(notext)
+
+let result = parseFloat(notext).toFixed(2) / 1.12
+
+let vatable_auto = parseFloat(result).toFixed(2)
+
+console.log(vatable_auto)
+// for vat amount 
+
+let vatAmount =
+  parseFloat(notext).toFixed(2) - parseFloat(vatable_auto).toFixed(2)
+
+let vatAmount_auto = parseFloat(vatAmount).toFixed(2)
+
+var value_amount = Math.abs(vatAmount_auto)
+console.log(value_amount)
+
+// validation
+let tracc_vatable = document.querySelector('#txt_vatable').value
+var cleantext_vat = tracc_vatable.replace(',','' ).trim(); 
+let tracc_vatamount = document.querySelector('#txt_vatamount').value
+var cleantext_vatamount = tracc_vatamount.replace(',','' ).trim(); 
+
+let remarks = document.querySelector('#txtremarks');
+// animation
+
+
+if (vatable_auto === cleantext_vat){
+
+   
+    remarks.value  = 'Computation Matched';
+
+    var ofs = 0;
+    var el = document.getElementById('txtremarks');
+
+    window.setInterval(function(){
+    el.style.background = 'rgba(160, 249,0,'+Math.abs(Math.sin(ofs))+')';
+    ofs += 0.01;
+    }, 10); 
+
+
+}else if (value_amount === cleantext_vatamount){
+
+
+    remarks.value  = 'Computation Matched';
+
+    var ofs = 0;
+    var el = document.getElementById('txtremarks');
+
+    window.setInterval(function(){
+    el.style.background = 'rgba(160, 249,0,'+Math.abs(Math.sin(ofs))+')';
+    ofs += 0.01;
+    }, 10); 
+
+}else{
+
+    remarks.value = 'Computation Error: Should be VATable: '+ vatable_auto + ' VAT Amount: ' +value_amount;
+
+    var ofs = 0;
+    var el = document.getElementById('txtremarks');
+
+    window.setInterval(function(){
+    el.style.background = 'rgba(255,0,0,'+Math.abs(Math.sin(ofs))+')';
+    ofs += 0.01;
+    }, 10); 
+
+}
+
+
+
+
+
