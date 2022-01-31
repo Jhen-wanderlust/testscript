@@ -449,3 +449,69 @@ var listData = [
 	let genData = listData[Math.floor(Math.random() * listData.length)]
 	var newdata = document.getElementById("txt1").value = genData;
 
+
+
+
+
+
+//random dates
+
+
+
+localStorage.setItem('data7', 0)
+
+
+;(function() {
+  var randomString = function(length) {
+    
+    var text = "";
+  
+    var possible = "123456789";
+    
+    for(var i = 0; i < length; i++) {
+    
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+    
+    }
+    
+    return text;
+  }
+
+  // random string length
+  var random = 0 + randomString(1) + '/';
+  var ran1 = 1 + randomString(1) ;
+
+  mey = random.toString();
+  mey1 = ran1.toString();
+//separate
+var counter = localStorage.getItem('data7')
+
+  dte = [
+
+    mey + mey1+'/2019',
+    mey + mey1  + '/2020',
+    mey + mey1 +'/2021',
+    mey + mey1 +'/2022'
+  ]
+  
+  
+  var today = new Date(dte[counter]);
+  
+  
+  counter++
+  localStorage.setItem('data7', counter)
+  
+  
+  var tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate()+1);
+  me = tomorrow.toLocaleDateString();
+  change = me.replace('/','-'); 
+  change1 = change.replace('/','-'); 
+  
+  })();
+  
+
+
+//fire
+document.querySelector('#txt_info_trndte').value = change1;
+
